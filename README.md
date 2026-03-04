@@ -4,6 +4,11 @@ Solidity error-type reference contract, built with Foundry.
 
 ## Contract
 
+| | |
+|---|---|
+| **Network** | Base Sepolia |
+| **Address** | [`0x3acce4e3066b49bf1aa33c01579400f7877c27fe`](https://sepolia.basescan.org/address/0x3acce4e3066b49bf1aa33c01579400f7877c27fe#code) |
+
 | Contract | Description |
 |---|---|
 | `Failed` | Demonstrates every category of run-time error in Solidity 0.8+. Each external function is designed to revert unconditionally via a distinct mechanism. |
@@ -13,11 +18,11 @@ Solidity error-type reference contract, built with Foundry.
 | Function | Error type | Panic code |
 |---|---|---|
 | `demoPlainRevert` | `revert()` — empty return data | — |
-| `demoRevertString` | `revert("…")` — `Error(string)` | — |
+| `demoRevertString` | `revert("...")` — `Error(string)` | — |
 | `demoRevertSimpleCustomError` | Custom error, no parameters | — |
 | `demoRevertDetailedCustomError` | Custom error with parameters | — |
 | `demoRequireNoMessage` | `require(false)` — empty return data | — |
-| `demoRequireWithMessage` | `require(false, "…")` — `Error(string)` | — |
+| `demoRequireWithMessage` | `require(false, "...")` — `Error(string)` | — |
 | `demoRequireWithCustomError` | `require(false, CustomError())` (Solidity >= 0.8.26) | — |
 | `demoAssertFail` | `assert(false)` | `0x01` |
 | `demoArithmeticOverflow` | `uint256.max + 1` | `0x11` |
