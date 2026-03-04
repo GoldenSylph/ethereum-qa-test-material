@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.34;
 
-import { Test } from "forge-std-1.14.0/src/Test.sol";
-import { stdError } from "forge-std-1.14.0/src/StdError.sol";
-import { Failed } from "../src/Failed.sol";
+import {Test} from "forge-std-1.14.0/src/Test.sol";
+import {stdError} from "forge-std-1.14.0/src/StdError.sol";
+import {Failed} from "../src/Failed.sol";
 
 contract FailedTest is Test {
     Failed internal target;
@@ -31,12 +31,7 @@ contract FailedTest is Test {
 
     function test_RevertDetailedCustomError() external {
         vm.expectRevert(
-            abi.encodeWithSelector(
-                Failed.DetailedError.selector,
-                address(this),
-                uint256(0),
-                "context info"
-            )
+            abi.encodeWithSelector(Failed.DetailedError.selector, address(this), uint256(0), "context info")
         );
         target.demoRevertDetailedCustomError();
     }

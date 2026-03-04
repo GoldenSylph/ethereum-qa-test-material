@@ -8,7 +8,6 @@ pragma solidity ^0.8.34;
 ///      arithmetic panics, division panics, enum-conversion panics, array panics,
 ///      and uninitialized function-pointer panics.
 contract Failed {
-
     // -- Custom error declarations ------------------------------------------
 
     /// @notice Reverts with no additional data.
@@ -25,7 +24,10 @@ contract Failed {
     // -- Supporting state / types ----------------------------------------------
 
     /// @dev Status enum used solely to demonstrate invalid enum-conversion panics.
-    enum Status { Active, Inactive }
+    enum Status {
+        Active,
+        Inactive
+    }
 
     /// @dev Storage array used solely to demonstrate pop-on-empty panics.
     uint256[] internal _storageArray;
