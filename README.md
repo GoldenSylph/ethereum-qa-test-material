@@ -80,4 +80,29 @@ forge script script/Failed.s.sol:FailedScript \
 15. What is EIP-7702?
 16. What capability does EIP-7702 enable for EOAs?
 
+### Foundry cast
+
+17. What is `cast` and what is its primary purpose in the Foundry toolkit?
+18. How do you call a read-only contract function with `cast` without spending gas?
+19. How do you send a state-changing transaction to a contract with `cast`?
+20. How do you compute the 4-byte selector for a function signature with `cast`?
+21. How do you decode ABI-encoded calldata using `cast`?
+22. How do you decode ABI-encoded return data using `cast`?
+23. How do you read a raw storage slot from a deployed contract with `cast`?
+24. How do you retrieve the ABI of a verified contract as a Solidity interface with `cast`?
+25. How do you convert a value between units (e.g. ether to wei) with `cast`?
+26. How does `cast run` assist a QA engineer in debugging a historical transaction?
+
+### ABI
+
+27. What is the ABI in Ethereum?
+28. What is a function selector and how is it derived?
+29. How are function arguments encoded in the ABI?
+30. What is the difference between static and dynamic ABI types?
+31. What are the elementary (static) ABI types?
+32. What are the dynamic ABI types?
+33. How is a `tuple` type represented in the ABI?
+34. How does ABI encoding differ between `call` data and `returndata`?
+35. What is ABI-packed encoding and how does it differ from standard ABI encoding?
+
 
