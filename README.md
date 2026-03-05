@@ -55,7 +55,7 @@ forge script script/Failed.s.sol:FailedScript \
 
 ## Questions
 
-> Answers are in `ANSWERS.md` (git-ignored).
+> Answers are in [`ANSWERS.md`](./ANSWERS.md).
 
 ### EVM
 
