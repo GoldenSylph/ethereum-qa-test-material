@@ -13,9 +13,5 @@ docs/
 # Dotenv file
 .env
 
-# Answer key
-ANSWERS.md
-
-
 # Soldeer
 /dependencies
